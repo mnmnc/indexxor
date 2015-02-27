@@ -115,13 +115,6 @@ def create_css():
 
 def main():
 	files = mlist('.')
-	for file in files:
-		print(file['name'], end=" ")
-		print(file['text_ctime'], end=" ")
-		print(file['text_mtime'], end=" ")
-		print(file['text_size'], end=" ")
-		print(file['sha256'], end=" ")
-		print()
 
 	outfile = 'index.html'
 	exclude = ['indexxor.py', outfile]
